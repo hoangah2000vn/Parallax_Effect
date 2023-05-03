@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central America Migration</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style_map.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
 </head>
 
@@ -20,12 +24,12 @@
 
     </div>
     <section>
-        <h2>MEET Maria</h2>
+        <h1>MEET MARIA</h1>
         <div>
-            <p>
-                She is a 6-years-old little girl from Honduras.
+            <h3>
+                She is a 6-year-old girl from Honduras.
 
-            </p>
+            </h3>
         </div>
 
     </section>
@@ -36,12 +40,76 @@
     <div class="scene2">
         <img class="maria_s2" src="img/character/sad.png" id="maria_s3">
 
+        <div class="bodytext">
+            Name: Maria <br>
+            Age: 6 <br>
+            Family size: 5 <br>
+            Hometown: Guatemala City 
+        </div>
+
     </div>
+    <section>
+        <h2>Maria is one of nearly 130,000 unaccompanied migrant children that entered the U.S. shelter system in 2022. <br> This was a record.</h2>
+        <div>
+            <p>
+                Source: https://www.cbsnews.com/news/immigration-unaccompanied-migrant-children-record-numbers-us-shelter-system/
+
+            </p>
+        </div>
+    </section>
+
+    <div class="scene2half">
+        <img class="maria_s2half" src="img/character/scared.png" id="maria_s2half">
+    </div>
+
+    <section>
+        <h2>The Northern Triangle countries - Guatemala, Honduras and El Salvador - account for the greatest percentage of unaccompanied children arriving at the US border. </h2> 
+        <h3>This was as high as 17 - 26 & of all migrants encountered in 2022. </h3>
+        <div id="map"></div>
+        <script  src="js/script_map.js"></script>
+    </section>
+
+    <div class="scenewhy">
+
+        <div class = 'head'>BUT WHY<br> <br> ?</div>
+        <div class = "text1"> Why are thousands of children from these countries along with their families forced to leave their homelands and undertake such perilious journeys?</div>
+    </div>
+
+    <section> 
+        <!-- Load D3 -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <!-- Add 2 buttons -->
+        <button onclick="update('GT')">Guatemala</button>
+        <button onclick="update('HND')">Honduras</button>
+        <button onclick="update('SLV')">El Salvador</button>
+
+        <!-- Create a div where the graph will take place -->
+        <div id="motivation_dataviz"></div>
+        <div id = 'motivation_text'>
+            Of the many reasons why migrants choose to escape their home countries, lack of resources, food insecurity, and threats of violence are the most important factors
+        </div>
+        
+        <script  src="js/script_motivation.js"></script>
+
+    </section>
     
     <div class="scene3">
         <img class="maria_s3" src="img/character/scared.png" id="maria_s3">
         <img class="gang" src="img/character/gang.png" id="gang">
     </div>
+
+    <section>
+        <div>
+            <h3>Lethal violence against girls and women in the Northern Triangle</h3>
+            <!-- <svg id = "violenceSvg" width="960" height="500"></svg> -->
+            <img class="femicide" src="img/graph_static/femicide.PNG" id="femicide">
+          </div>
+          <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js'></script> -->
+
+          <!-- <script  src="js/script_lineplot.js"></script> -->
+
+    </section>
+
 
     <!-- Household Items: Data about household items -->
     <div class="dataframe3">
@@ -65,6 +133,8 @@
     <footer>
          Copyright © 2023 - All rights Reserved - Designed by Anh, Han, & Rohit for 6.C35 Data Visualization
     </footer>
+
+
 
 </body>
 
