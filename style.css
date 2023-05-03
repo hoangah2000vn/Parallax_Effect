@@ -43,6 +43,16 @@ body, html {
     min-height: 100%;
 }
 
+.scene2half {
+    background-image: url(img/background/border.jpg);
+    min-height: 100%;
+}
+
+.scenewhy{
+    background-color: #21618C;
+    min-height: 100%;
+}
+
 .maria_s2{
     position: relative;
     top: 200px;
@@ -68,6 +78,24 @@ body, html {
     width: 50%;
 }
 
+#motivation_dataviz {
+    /*position: relative;
+    left: 300px;*/
+}
+
+#motivation_text {
+    position: relative;
+    left: 100px;
+    text-align: left;
+
+}
+
+.dataframe3{
+    background-color: bisque;
+    background-size: cover;
+
+}
+
 /* household items images: only have tv and fridge*/
 .microwave{filter: grayscale(1);}
 .stove{filter: grayscale(1);}
@@ -90,13 +118,19 @@ body, html {
     right: 300px;
 }
 
-.scene1, .scene2, .scene3, .scene4 {
+.scene1, .scene2, .scene2half, .scenewhy, .scene3, .scene4 {
     position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /*Important*/
+}
+
+#names {
+    position: relative;
+    top: 250px;
+    color: #ffffff;
 }
 
 .head {
@@ -112,6 +146,32 @@ body, html {
     font-family: 'Poppins';
 }
 
+.bodytext {
+    position: relative;
+    left: 900px;
+    color: #ffffff;
+    font-size: 2vw;
+    text-align: left;
+    letter-spacing: 5px;
+    animation: drop 3.0s ease; /* Make things beautiful */
+    cursor: pointer;
+    font-family: 'Poppins';
+    background-color: #323232;
+    padding-left: 10px;
+}
+
+.text1 {
+    position: relative;
+    top: 400px;
+    color: #ffffff;
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: 5px;
+    animation: drop 3.0s ease; /* Make things beautiful */
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
 .head:hover{
     color:white;
 }
@@ -121,6 +181,22 @@ section {
     padding: 50px 80px;
 
 }
+
+.line {
+    fill: none;
+    stroke-width: 3px;
+  }
+  
+.overlay {
+    fill: none;
+    pointer-events: all;
+  }
+  
+.hover-line {
+    stroke: #B74779;
+    stroke-width: 2px;
+    stroke-dasharray: 3,3;
+  }
 
 footer{
     width: 100%;
@@ -151,8 +227,12 @@ footer{
     }
   }
 
+
+
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   /*@import url('https://fonts.googleapis.com/css?family=Ubuntu'); IMPORTANT*/
 
 
   /*========T H A N K  Y O U=======*/
+
