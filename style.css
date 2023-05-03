@@ -68,11 +68,16 @@ body, html {
     width: 50%;
 }
 
-.dataframe3{
-    background-color: bisque;
-    background-size: cover;
-
-}
+/* household items images: only have tv and fridge*/
+.microwave{filter: grayscale(1);}
+.stove{filter: grayscale(1);}
+.computer{filter: grayscale(1);}
+.internet{filter: grayscale(1);}
+.telephone{filter: grayscale(1);}
+.airconditioner{filter: grayscale(1);}
+.car{filter: grayscale(1);}
+.washer{filter: grayscale(1);}
+.stereo{filter: grayscale(1);}
 
 .scene4 {
     background-image: url(img/background/railway.jpg);
