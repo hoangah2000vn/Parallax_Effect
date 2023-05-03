@@ -17,7 +17,7 @@ body, html {
     text-align: center;
 }
 .scene1 {
-    background-image: url(img/background/bg.jpeg);
+    background-image: url(img/background/ghetto_night.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -32,11 +32,42 @@ body, html {
     top: 200px;
 
 }
-*/
+
 .ghetto_night{
     height: 100vh;
     width: 100vw;
 }
+
+*/
+/*
+.disclaimer_popup{
+    background-color: #ffffff;
+    width: 50%;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);s
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none;
+    font-family: “Poppins”,sans-serif;
+    text-align: center;
+}*/
+
+.disclaimer_popup {
+    position: relative;
+    left: 900px;
+    color: #ffffff;
+    font-size: 2vw;
+    text-align: left;
+    letter-spacing: 5px;
+    animation: drop 3.0s ease; /* Make things beautiful */
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: #100f0fb1;
+    padding-left: 10px;
+}
+
 
 .scene2 {
     background-image: url(img/background/kitchen.jpg);
@@ -136,14 +167,16 @@ body, html {
 .head {
     position: absolute;
     color: #fff;
-    font-size: 3vw;
-    top:20%;
+    font-size: 5vw;
+    top:30%;
+    height: 500%;
     width: 100%;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     animation: drop 3.0s ease; /* Make things beautiful */
     cursor: pointer;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .bodytext {
@@ -155,7 +188,7 @@ body, html {
     letter-spacing: 5px;
     animation: drop 3.0s ease; /* Make things beautiful */
     cursor: pointer;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     background-color: #323232;
     padding-left: 10px;
 }
