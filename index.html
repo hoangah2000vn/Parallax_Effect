@@ -75,7 +75,7 @@
             <p>
                 Colored items are household items that Maria' family has in posession. Click on the icons to explore!
             </p>
-            <button id = "tv_button" "class="tv_open" type="button"><img src="img/household/tv.png"/></button>
+            <button class="tv_open" type="button"><img src="img/household/tv.png"/></button>
             <button class = "fridge_open" type="button"><img src="img/household/fridge.png"/></button>
             <button class = "microwave_open" type="button"><img src="img/household/microwave.png"/></button>
             <button class = "stove_open" type="button"><img src="img/household/stove.png"/></button>
@@ -92,19 +92,6 @@
                 <div class="flourish-embed flourish-chart" data-src="visualisation/13659012"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
             </div>
 
-            <script>
-                tv_button.addEventListener("click", function () {
-                tvmodal.classList.add("show");
-                });
-                tv_close.addEventListener("click", function () {
-                    tvmodal.classList.remove("show");
-                });
-                window.addEventListener("click", function (event) {
-                    if (event.target == tvmodal) {
-                        tvmodal.classList.remove("show");
-                    }
-                });
-            </script>
 
             <script src="./js/household.js"></script>
             <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/13657182"><script src="https://public.flourish.studio/resources/embed.js"></script></div>

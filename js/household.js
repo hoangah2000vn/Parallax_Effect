@@ -4,11 +4,12 @@ const closeTvButton = document.querySelectorAll('.tv_close')[0]
 
 openTvButton.addEventListener('click', () => {
     tvmodal.style.display = 'block';
-    console.log('hello')
+    console.log('opening')
 })
 
 closeTvButton.addEventListener('click', () => {
     tvmodal.style.display = 'none';
+    console.log('closing')
 })
 
 
