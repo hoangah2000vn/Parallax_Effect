@@ -7,54 +7,154 @@
     <title>Central America Migration</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style_map.css">
-
+    <link rel="stylesheet" href="css/household_style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+    
 </head>
 
 <body>
-    <!-- First scene: Introduction -->
+    <!-- First scene: Introduction ------------------------------------------------------------------------------------------------------->
     <div class="scene1">
         <div class="head">
             Northern Triangle Migration
         </div>
 
-     <!--   <img class="ghetto_night" src="img/background/ghetto_night_bgr.png" id="ghetto_night"> -->
-
-    </div>
-
-    <!-- Pop Up disclaimer: below will be the code for a pop-up disclaimer -->
-    <div class=”disclaimer_popup”>
+        <!-- Pop Up disclaimer: below will be the code for a pop-up disclaimer-------------------------------------------------------- -->
         
+        <div class="contentBox">
+            <div class="close"></div>
+            <div class="imgBox">
+                <img src="img/character/flower.png">
+            </div>
+            <div class="disclaimer_content">
+                <h2> DISCLAIMER </h2>
+                <p> All characters and event in this story is fictitious but the hunger and violence that Central American migrants are facing is very real.</p>
+            </div>
+        </div>
+
+        <script src="./js/disclaimer_popup.js"></script>
+        <!--  End of Pop Up disclaimer----------------------------------------------------------------------------------------------- -->
+
     </div>
 
+    <!--  End of First scene: Introduction ------------------------------------------------------------------------------------------------------->
 
+    
+
+    <!-- Second scene: Introduce the character --------------------------------------------------------------------------------------------->
+    <div class="scene2">
+        <img class="maria_s2" src="img/character/sad.png" id="maria_s3">
+        <div class="s2_content">
+            <p> This is Maria. Maria is a 6 years old girl from Guatemala city. She lives in a <br/> family of 4 people with her mom, her dad, and her younger sister.</p>
+        </div>
+
+    </div>
+    
     <section>
-        <h1>MEET MARIA</h1>
-        <div>
-            <h3>
-                She is a 6-year-old girl from Honduras.
+        <h2>The Northern Triangle countries - Guatemala, Honduras and El Salvador - account for the greatest percentage of unaccompanied children arriving at the US border. </h2> 
+        <h3>This was as high as 17 - 26 & of all migrants encountered in 2022. </h3>
 
-            </h3>
+        <div class="flourish-embed flourish-map" data-src="visualisation/13742261"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        <div class="flourish-embed flourish-survey" data-src="visualisation/13738358"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        
+      
+
+    </section>
+    
+
+    
+
+   
+
+    <!-- Household section: Talk about what household items Maria has at home -->
+    <section>
+        <h1>Household items that Maria's family has</h1>
+        <div class="household_items">
+            <p>
+                Colored items are household items that Maria' family has in posession. Click on the icons to explore!
+            </p>
+            <button class="tv_open" type="button"><img src="img/household/tv.png" alt="tvbutton" border = '0'/></button>
+            <button class = "fridge_open" type="button"><img src="img/household/fridge.png" alt="fridgebutton" border = '0'/></button>
+            <button class = "microwave_open" type="button"><img src="img/household/microwave.png" alt="microwavebutton" border = '0'/></button>
+            <button class = "stove_open" type="button"><img src="img/household/stove.png" alt="stovebutton" border = '0'/></button>
+            <button class = "computer_open" type="button"><img src="img/household/computer.png" alt="computerbutton" border = '0'/></button>
+            <button class = "internet_open" type="button"><img src="img/household/internet.png" alt="internetbutton" border = '0'/></button>
+            <button class = "telephone_open" type="buttson"><img src="img/household/telephone.png" alt="telephonebutton" border = '0'/></button>
+            <button class = "ac_open" type="button"><img src="img/household/airconditioner.png" alt="acbutton" border = '0'/></button>
+            <button class = "car_open" type="button"><img src="img/household/car.png" alt="carbutton" border = '0'/></button>
+            <button class = "washer_open" type="button"><img src="img/household/washer.png" alt="washerbutton" border = '0'/></button>
+            <button class = "stereo_open" type="button"><img src="img/household/stereo.png" alt="stereobutton" border = '0'/></button>
+
+            <div class="tvmodal" id="tvmodal">
+                <button class="tv_close">&times;</button>
+                <div class="flourish-embed flourish-chart" data-src="visualisation/13659012"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            </div>
+
+            <script src="./js/household.js"></script>
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/13657182"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+        
+
         </div>
 
     </section>
 
     
-
-    <!-- Second scene: Introduce the character -->
-    <div class="scene2">
-        <img class="maria_s2" src="img/character/sad.png" id="maria_s3">
-
-        <div class="bodytext">
-            Name: Maria <br>
-            Age: 6 <br>
-            Family size: 5 <br>
-            Hometown: Guatemala City 
+    <div class="scene3">
+        <img class="maria_s3" src="img/character/scared.png" id="maria_s3">
+        <img class="gang" src="img/character/gang.png" id="gang">
+        <div class="s3_content">
+            <p> Maria constantly witnesses gang violence in her hometown on a day-to-day basis. <br/> 
+                Central American gangs are responsible for brutal act of violence, chronic abuse of <br/> 
+                women, forced displacement of many children and families in Maria's village.</p>
         </div>
-
     </div>
+
+    <section>
+        <div>
+            <h3>Lethal violence against girls and women in the Northern Triangle</h3>
+            <script src="./js/sketch.js"></script>
+            
+                <h3 class = "centerContent">The Journey of Life Cut Short</h3>
+                <div class = "centerContent" id="canvasForHTML"></div>
+                <div class = "centerContent">
+                  <button onclick="setSLV()" type="button">El Salvador</button>
+                  <button onclick="setHND()" type="button">Honduras</button>
+                  <button onclick="setGT()" type="button">Guatemala</button>
+                  <p><br></p>
+                </div>
+                
+       
+        </div>
+         
+          
+         
+    </section>
+
+
+
+
+    
+    <div class="scene4">
+        <img class="maria_s4" src="img/character/sad.png" id="maria_s4">
+        <div class="s4_content">
+            <p> The poverty, hunger, and violence in her hometown causes Maria's family to undertake  <br/> 
+                the perilous journey to the US in order to seek better and safer living condition. </p> 
+        </div>
+    </div>
+
+
+    <div class="scene5">
+        <img class="children_border" src="img/character/friends.png" id="maria_s5">
+        <div class="s5_content">
+            <p> In many cases, unaccompanied children founded at the border started the   <br/> 
+                journey with their parents and were separated during the long dangerous trip.</p> 
+        </div>
+    </div>
+
+
     <section>
         <h2>Maria is one of nearly 130,000 unaccompanied migrant children that entered the U.S. shelter system in 2022. <br> This was a record.</h2>
         <div>
@@ -65,98 +165,8 @@
         </div>
     </section>
 
-    <div class="scene2half">
-        <img class="maria_s2half" src="img/character/scared.png" id="maria_s2half">
-    </div>
-
-    <section>
-        <h2>The Northern Triangle countries - Guatemala, Honduras and El Salvador - account for the greatest percentage of unaccompanied children arriving at the US border. </h2> 
-        <h3>This was as high as 17 - 26 & of all migrants encountered in 2022. </h3>
-        <div id="map"></div>
-        <script  src="js/script_map.js"></script>
-    </section>
-
-    <div class="scenewhy">
-
-        <div class = 'head'>BUT WHY<br> <br> ?</div>
-        <div class = "text1"> Why are thousands of children from these countries along with their families forced to leave their homelands and undertake such perilious journeys?</div>
-    </div>
-
-    <section> 
-        <!-- Load D3 -->
-        <script src="https://d3js.org/d3.v4.js"></script>
-        <!-- Add 2 buttons -->
-        <button onclick="update('GT')">Guatemala</button>
-        <button onclick="update('HND')">Honduras</button>
-        <button onclick="update('SLV')">El Salvador</button>
-
-        <!-- Create a div where the graph will take place -->
-        <div id="motivation_dataviz"></div>
-        <div id = 'motivation_text'>
-            Of the many reasons why migrants choose to escape their home countries, lack of resources, food insecurity, and threats of violence are the most important factors
-        </div>
-        
-        <script  src="js/script_motivation.js"></script>
-
-    </section>
     
-    <!-- Household section: Talk about what household items Maria has at home -->
-    <section>
-        <h1>Household items that Maria's family has</h1>
-        <div class="household_items">
-            <p>
-                Colored items are household items that Maria' family has in posession. Hover over the icon to explore!
-            </p>
-            <!-- import household images -->
-            <img class="tv" src="img/household/tv.png" id="tv">
-            <img class="fridge" src="img/household/fridge.png" id="fridge">
-            <img class="microwave" src="img/household/microwave.png" id="microwave">
-            <img class="stove" src="img/household/stove.png" id="stove">
-            <img class="computer" src="img/household/computer.png" id="computer">
-            <img class="internet" src="img/household/internet.png" id="internet">
-            <img class="telephone" src="img/household/telephone.png" id="telephone">
-            <img class="airconditioner" src="img/household/airconditioner.png" id="airconditioner">
-            <img class="car" src="img/household/car.png" id="car">
-            <img class="washer" src="img/household/washer.png" id="washer">
-            <img class="stereo" src="img/household/stereo.png" id="stereo">
 
-        </div>
-
-    </section>
-
-    
-    <div class="scene3">
-        <img class="maria_s3" src="img/character/scared.png" id="maria_s3">
-        <img class="gang" src="img/character/gang.png" id="gang">
-    </div>
-
-    <section>
-        <div>
-            <h3>Lethal violence against girls and women in the Northern Triangle</h3>
-            <!-- <svg id = "violenceSvg" width="960" height="500"></svg> -->
-            <img class="femicide" src="img/graph_static/femicide.PNG" id="femicide">
-          </div>
-          <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js'></script> -->
-
-          <!-- <script  src="js/script_lineplot.js"></script> -->
-
-    </section>
-
-
-    
-    <section>
-        <h1>Decision to Migrate</h1>
-        <p> Maria decides to migrate in hope of a better opportunity & living condition
-        </p>
-    </section>
-
-    
-    <div class="scene4">
-        <img class="maria_s4" src="img/character/sad.png" id="maria_s4">
-        <div class="head">
-            The End...
-        </div>
-    </div>
     <footer>
          Copyright © 2023 - All rights Reserved - Designed by Anh, Han, & Rohit for 6.C35 Data Visualization
     </footer>

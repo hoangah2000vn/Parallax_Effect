@@ -21,123 +21,191 @@ body, html {
     background-size: cover;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: absolute; 
     min-height: 100%;
     transform: translateZ(-1px) scale 2.2;
 }
-/*
-.maria_s1{
-    position: relative;
-    right: 200px;
-    top: 200px;
 
-}
 
-.ghetto_night{
-    height: 100vh;
-    width: 100vw;
-}
+/* This is code for disclaimer pop-up =====================================================================*/
 
-*/
-/*
-.disclaimer_popup{
-    background-color: #ffffff;
-    width: 50%;
-    padding: 30px 40px;
+.contentBox{
     position: absolute;
-    transform: translate(-50%,-50%);s
-    left: 50%;
-    top: 50%;
-    border-radius: 8px;
     display: none;
-    font-family: “Poppins”,sans-serif;
-    text-align: center;
-}*/
-
-.disclaimer_popup {
-    position: relative;
-    left: 900px;
-    color: #ffffff;
-    font-size: 2vw;
-    text-align: left;
-    letter-spacing: 5px;
-    animation: drop 3.0s ease; /* Make things beautiful */
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    background-color: #100f0fb1;
-    padding-left: 10px;
+    top: 40%;
+    left: 30%;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.imgBox{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 
+}
+
+/* don't understand why this does not show up */
+.contentBox .imgBox ::before{
+    content: ' ';
+    position: absolute;
+    width: 250px;
+    height: px;
+    background: purple;
+    border-radius: 50%;
+
+
+}
+
+.imgBox img{
+    position: relative;
+    max-width: 300px;
+    z-index: 1;
+
+}
+
+.contentBox .disclaimer_content{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    top: 40px
+    /* display: flex; */
+
+}
+
+.contentBox .disclaimer_content h2{
+    font: bold;
+    color: black;
+    line-height: 1em;
+    font-weight: 400;
+    font-size: 2em;
+    justify-content: center;
+}
+
+.contentBox .disclaimer_content p{
+    font: 900;
+    font-weight: 300;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: pink url(img/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+
+}
+/* ========================================================================================================= */
+
+/* Scene 2 =================================================================================================*/
 .scene2 {
     background-image: url(img/background/kitchen.jpg);
     min-height: 100%;
 }
 
-.scene2half {
-    background-image: url(img/background/border.jpg);
-    min-height: 100%;
+.s2_content{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    width: 70%;
+    opacity: 80%;
+    width: 800px;
+    max-width: 70%;
+    height: 100px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-30%, -90%);
 }
+
+.s2_content p{
+    padding: 1px;
+    font: 900;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 200%;
+}
+
+.maria_s2{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+}
+
+/* ========================================================================================================= */
+
+
 
 .scenewhy{
     background-color: #21618C;
     min-height: 100%;
 }
 
-.maria_s2{
-    position: relative;
-    top: 200px;
-    right: 200px;
-}
+
+
+/* Scene 3: Maria & gang ================================================================================================================*/
 
 .scene3 {
     background-image: url(img/background/ghetto_day.jpg);
     min-height: 100%;
 }
 
+.s3_content{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    width: 70%;
+    opacity: 80%;
+    width: 800px;
+    max-width: 70%;
+    height: 100px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-30%, -90%);
+}
+
+.s3_content p{
+    padding: 1px;
+    font: 900;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 150%;
+}
+
 .maria_s3{
-    position: relative;
-    left: 850px;
-    top: 80px;
+    position: absolute;
+    left: 900px;
+    top: 180px;
 }
 
 .gang{
-    position: relative;
+    position: absolute;
     right: 600px;
-    top: 70px;
-    height: 50%;
-    width: 50%;
+    top: 100px;
+    height: 90%;
+    width: 55%;
 }
 
-#motivation_dataviz {
-    /*position: relative;
-    left: 300px;*/
-}
+/* End of Scene 3 ================================================================================================================*/
 
-#motivation_text {
-    position: relative;
-    left: 100px;
-    text-align: left;
 
-}
 
-.dataframe3{
-    background-color: bisque;
-    background-size: cover;
 
-}
-
-/* household items images: only have tv and fridge*/
-.microwave{filter: grayscale(1);}
-.stove{filter: grayscale(1);}
-.computer{filter: grayscale(1);}
-.internet{filter: grayscale(1);}
-.telephone{filter: grayscale(1);}
-.airconditioner{filter: grayscale(1);}
-.car{filter: grayscale(1);}
-.washer{filter: grayscale(1);}
-.stereo{filter: grayscale(1);}
-
+/* Scene 4: decision to migrate ========================================================================================================*/
 .scene4 {
     background-image: url(img/background/railway.jpg);
     min-height: 100%;
@@ -149,7 +217,69 @@ body, html {
     right: 300px;
 }
 
-.scene1, .scene2, .scene2half, .scenewhy, .scene3, .scene4 {
+.s4_content{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    width: 70%;
+    opacity: 80%;
+    width: 800px;
+    max-width: 70%;
+    height: 100px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-30%, -90%);
+}
+
+.s4_content p{
+    padding: 1px;
+    font: 900;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 150%;
+}
+
+/* End of Scene 4 ================================================================================================================*/
+
+
+/* Scene 5: border scene ========================================================================================================*/
+.scene5 {
+    background-image: url(img/background/border.jpg);
+    min-height: 100%;
+}
+.children_border{
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}
+
+.s5_content{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    width: 70%;
+    opacity: 80%;
+    width: 800px;
+    max-width: 70%;
+    height: 100px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-30%, -90%);
+}
+
+.s5_content p{
+    padding: 1px;
+    font: 900;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 150%;
+}
+
+/* End of Scene 5 ================================================================================================================*/
+
+.scene1, .scene2, .scenewhy, .scene3, .scene4, .scene5 {
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -164,6 +294,7 @@ body, html {
     color: #ffffff;
 }
 
+/* This is the title font */
 .head {
     position: absolute;
     color: #fff;
