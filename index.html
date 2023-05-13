@@ -30,7 +30,7 @@
             </div>
             <div class="disclaimer_content">
                 <h2> DISCLAIMER </h2>
-                <p> All characters and event in this story is fictitious but the hunger and violence that Central American migrants are facing is very real.</p>
+                <p> All characters and events in this story are fictitious but the poverty, hunger, and violence that Central American migrants are facing are very real.</p>
             </div>
         </div>
 
@@ -75,22 +75,36 @@
             <p>
                 Colored items are household items that Maria' family has in posession. Click on the icons to explore!
             </p>
-            <button class="tv_open" type="button"><img src="img/household/tv.png" alt="tvbutton" border = '0'/></button>
-            <button class = "fridge_open" type="button"><img src="img/household/fridge.png" alt="fridgebutton" border = '0'/></button>
-            <button class = "microwave_open" type="button"><img src="img/household/microwave.png" alt="microwavebutton" border = '0'/></button>
-            <button class = "stove_open" type="button"><img src="img/household/stove.png" alt="stovebutton" border = '0'/></button>
-            <button class = "computer_open" type="button"><img src="img/household/computer.png" alt="computerbutton" border = '0'/></button>
-            <button class = "internet_open" type="button"><img src="img/household/internet.png" alt="internetbutton" border = '0'/></button>
-            <button class = "telephone_open" type="buttson"><img src="img/household/telephone.png" alt="telephonebutton" border = '0'/></button>
-            <button class = "ac_open" type="button"><img src="img/household/airconditioner.png" alt="acbutton" border = '0'/></button>
-            <button class = "car_open" type="button"><img src="img/household/car.png" alt="carbutton" border = '0'/></button>
-            <button class = "washer_open" type="button"><img src="img/household/washer.png" alt="washerbutton" border = '0'/></button>
-            <button class = "stereo_open" type="button"><img src="img/household/stereo.png" alt="stereobutton" border = '0'/></button>
+            <button id = "tv_button" "class="tv_open" type="button"><img src="img/household/tv.png"/></button>
+            <button class = "fridge_open" type="button"><img src="img/household/fridge.png"/></button>
+            <button class = "microwave_open" type="button"><img src="img/household/microwave.png"/></button>
+            <button class = "stove_open" type="button"><img src="img/household/stove.png"/></button>
+            <button class = "computer_open" type="button"><img src="img/household/computer.png"/></button>
+            <button class = "internet_open" type="button"><img src="img/household/internet.png"/></button>
+            <button class = "telephone_open" type="buttson"><img src="img/household/telephone.png"/></button>
+            <button class = "ac_open" type="button"><img src="img/household/airconditioner.png" /></button>
+            <button class = "car_open" type="button"><img src="img/household/car.png" /></button>
+            <button class = "washer_open" type="button"><img src="img/household/washer.png"/></button>
+            <button class = "stereo_open" type="button"><img src="img/household/stereo.png"/></button>
 
             <div class="tvmodal" id="tvmodal">
                 <button class="tv_close">&times;</button>
                 <div class="flourish-embed flourish-chart" data-src="visualisation/13659012"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
             </div>
+
+            <script>
+                tv_button.addEventListener("click", function () {
+                tvmodal.classList.add("show");
+                });
+                tv_close.addEventListener("click", function () {
+                    tvmodal.classList.remove("show");
+                });
+                window.addEventListener("click", function (event) {
+                    if (event.target == tvmodal) {
+                        tvmodal.classList.remove("show");
+                    }
+                });
+            </script>
 
             <script src="./js/household.js"></script>
             <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/13657182"><script src="https://public.flourish.studio/resources/embed.js"></script></div>

@@ -36,9 +36,11 @@ body, html {
     left: 30%;
     width: 600px;
     height: 400px;
-    background: #fff;
+    background: black;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 80%;
+    z-index: 1;
 }
 
 .imgBox{
@@ -51,22 +53,14 @@ body, html {
 
 }
 
-/* don't understand why this does not show up */
-.contentBox .imgBox ::before{
-    content: ' ';
-    position: absolute;
-    width: 250px;
-    height: px;
-    background: purple;
-    border-radius: 50%;
-
-
-}
 
 .imgBox img{
     position: relative;
-    max-width: 300px;
-    z-index: 1;
+    top:80px;
+    left: 1px;
+    max-width: 250px;
+    max-height: 600px;
+    z-index: 5;
 
 }
 
@@ -74,23 +68,31 @@ body, html {
     position: relative;
     width: 800px;
     height: 400px;
-    top: 40px
+    top: 40px;
+    opacity: 1;
     /* display: flex; */
 
 }
 
 .contentBox .disclaimer_content h2{
-    font: bold;
-    color: black;
+    font: bolder;
+    color: white;
     line-height: 1em;
-    font-weight: 400;
+    font-weight: 1em;
     font-size: 2em;
     justify-content: center;
+    padding-right: 50px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .contentBox .disclaimer_content p{
-    font: 900;
-    font-weight: 300;
+    padding-right: 45px;
+    font: bold;
+    font-weight: 1000;
+    opacity: 1;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 200%;
 }
 
 .close{
@@ -99,7 +101,7 @@ body, html {
     right: 20px;
     width: 40px;
     height: 40px;
-    background: pink url(img/close.png);
+    background: plum url(img/close.png);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center;
@@ -285,7 +287,7 @@ body, html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /*Important*/
+    background-attachment:scroll; /*Important*/
 }
 
 #names {
