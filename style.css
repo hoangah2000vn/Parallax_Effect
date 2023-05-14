@@ -147,6 +147,143 @@ body, html {
     left: 170px;
 }
 
+#map{
+    height: 400px;
+    display: none;
+
+}
+
+
+.flourish-map {
+    margin: auto;
+    width:50%;
+    left: 30%;
+    margin-top: 100px;
+    /*margin-bottom: 100px;*/
+}
+
+.flourish-survey {
+    margin: auto;
+    width:50%;
+}
+
+#motitext{
+    /*padding: 50px 80px;*/
+    width: 100%;
+    background-color: #585858;
+    color: #f2f2f2;
+}
+
+/* Scene 2a =================================================================================================*/
+.scene2a {
+    background-image: url(img/background/living2_copy.jpg);
+    min-height: 100%;
+}
+
+.s2a_content{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    width: 70%;
+    opacity: 80%;
+    width: 800px;
+    max-width: 70%;
+    height: 100px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-30%, -90%);
+}
+
+.s2a_content p{
+    padding: 1px;
+    font: 900;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 200%;
+}
+
+.maria_s2a{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    width: 300px;
+}
+
+.flourish-bar-chart-race{
+    margin: auto;
+    width: 80%;
+}
+
+.flourish-household{
+    width: 75%;
+    margin: auto;
+    margin-top: 100px;
+    display: none;
+}
+
+#tv{
+    display: block;
+}
+
+.object_button{
+}
+
+/* Scene 2b =================================================================================================*/
+.scene2b {
+    background-image: url(img/background/food_back.jpg);
+    min-height: 100%;
+}
+
+.s2b_content{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    width: 70%;
+    opacity: 80%;
+    width: 800px;
+    max-width: 70%;
+    height: 100px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-30%, -90%);
+}
+
+.s2b_content p{
+    padding: 1px;
+    font: 900;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 200%;
+}
+
+.maria_s2b{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    width: 400px;
+}
+
+.flourish-food-expenditure {
+    margin: auto;
+    width:75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flourish-hunger {
+    margin: auto;
+    width:75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flourish-food-category{
+    margin: auto;
+    width: 75%;
+}
+
 /* ========================================================================================================= */
 
 
@@ -281,7 +418,7 @@ body, html {
 
 /* End of Scene 5 ================================================================================================================*/
 
-.scene1, .scene2, .scenewhy, .scene3, .scene4, .scene5 {
+.scene1, .scene2, .scene2a, .scene2b, .scenewhy, .scene3, .scene4, .scene5 {
     position: relative;
     opacity: 0.70;
     background-position: center;
