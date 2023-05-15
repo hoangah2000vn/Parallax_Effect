@@ -115,7 +115,7 @@ ellipse(width*0.75,height*0.8,agentSize*2,agentSize*2);
 textAlign(LEFT);
 fill(0);
 textSize(15);
-text("100 women/girls in "+countryText[country], width*.76, height*0.75);
+text("100 women in "+countryText[country], width*.76, height*0.75);
 text("100 victims of feminicide in "+countryText[country], width*.76, height*0.80);
 
 

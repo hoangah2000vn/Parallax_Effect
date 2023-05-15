@@ -4,7 +4,7 @@ const dissappear = document.querySelectorAll('.close')[0]
 window.onload = function(){
    setTimeout(function(){
        disclaimer_popup.style.display = 'flex'
-   }, 1000)
+   }, 200)
 }
 
 dissappear.addEventListener('click', () => {

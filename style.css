@@ -216,7 +216,7 @@ body, html {
 }
 
 .flourish-household{
-    width: 75%;
+    width: 60%;
     margin: auto;
     margin-top: 100px;
     display: none;
@@ -327,7 +327,7 @@ body, html {
 
 .maria_s3{
     position: absolute;
-    left: 900px;
+    left: 950px;
     top: 250px;
 }
 
@@ -352,7 +352,7 @@ body, html {
 
 .maria_s4{
     position: relative;
-    top: 200px;
+    top: 300px;
     right: 300px;
 }
 
@@ -389,7 +389,7 @@ body, html {
 }
 .children_border{
     position: absolute;
-    top: 30%;
+    top: 40%;
     right: 15%;
 }
 
@@ -508,7 +508,7 @@ footer{
     height: 8vh;
     text-align: center;
     padding-top: 5vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
 }
 
 @media (max-width:800px) {
